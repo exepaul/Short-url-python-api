@@ -9,3 +9,21 @@ def shorten_url(url):
     return r.json()
     
     
+    
+    
+    
+    
+    #image upload via python api:
+    
+import cloudinary
+import cloudinary.uploader
+import urllib
+import cloudinary.api
+import urllib
+cloudinary.config(
+  cloud_name = "cloud_",
+  api_key = "key_",
+  api_secret = "key_"
+)
+
+cloudinary.uploader.upload("sample.png")['url'])['id']
